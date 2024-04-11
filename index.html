@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <!--Link-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+  
+    <!--responsive-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VerificaVettori </title>
+</head>
+<body class="bg-gray-100">
+
+    <div class="bg-sky-400 w-4/12 mx-auto text-center text-4xl mb-20
+     my-round p-4">Italia</div>
+
+    <div class=" gap-3 p-3 grid grid-cols-3 md:w-10/12 mx-auto bg-stone-300 rounded-xl mb-20">
+        <div class="bg-slate-400 bg-opacity-50 rounded-xl">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quos reprehenderit? Totam quae dicta hic sequi et quis saepe blanditiis autem suscipit sapiente similique alias voluptatum, repudiandae officia maiores molestias!
+        </div>
+        <div class="col-span-3 md:col-span-2 p-5" id="chart">
+        </div>
+    </div>
+
+    <div class="mb-20 grid grid-cols-1 rounded-xl gap-3 p-3 bg-stone-300 md:w-10/12 mx-auto">
+        <div class="rounded-xl" id="mappa">
+        </div>
+        <div class="text-center">
+            <button id="btnShow" class="bg-sky-300 m-3 p-2 rounded-xl hover:bg-blue-400 duration-300 ">Show marker</button>
+        </div>
+    </div>
+
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/comuni.js"></script>
+
+</body>
+</html>
